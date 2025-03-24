@@ -97,5 +97,5 @@ dreams(brotherDrems);
 function helloWorld (...a) {
     console.log(a)
 };
-console.log('hello',5,true,{name:'shah'},['a',1,true]);
+console.log('hello',5,true,{name:'sshah'},['a',1,true]);
 
