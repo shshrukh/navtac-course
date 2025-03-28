@@ -36,3 +36,12 @@ function calculation( a , b, opration) {
 }
 
 console.log(calculation(2,2,add));
+
+function funcOne(fname){
+    funTwo(fname)
+}
+function funTwo(fname) {
+    console.log(`hello my name is ${fname}`);
+}
+let ssss = funcOne("shahrukh")
+
