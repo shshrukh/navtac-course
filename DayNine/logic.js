@@ -58,4 +58,10 @@ const createUser = function (fName, lName, age) {
     user.fName = fName;
     user.lName = lName;
     user.age = age;
+    user.profile = function(){
+        return this.fName + ' '+ this.lName;
+    }
+    users.push(user)
+    return user;
 }
+console.log(createUser('naeem', 'khan', 34), users[0].profile());
