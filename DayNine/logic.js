@@ -48,3 +48,14 @@ userFour = {
     genMethods : usersMethods.methodTwo
 }
 console.log(userFour, userFour.genMethods());
+
+// but there is still an issue that is we have generate more keys to assess the all methods define in usersMethods;
+
+let users = [];
+
+const createUser = function (fName, lName, age) {
+    user = {},
+    user.fName = fName;
+    user.lName = lName;
+    user.age = age;
+}
