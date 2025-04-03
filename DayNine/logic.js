@@ -65,3 +65,25 @@ const createUser = function (fName, lName, age) {
     return user;
 }
 console.log(createUser('naeem', 'khan', 34), users[0].profile());
+
+// we konw that if we have an object then we can use its own methos then how can we assess these methods? this is actually by proto we can also use create such type of methods by using proto.
+
+const userMeth = {
+    fullName() {
+        return this.fName + ' ' + this.lName;
+    }
+};
+
+function createsUser(fName, lName, age) {
+    const user = Object.create(userMeth); 
+    user.fName = fName;
+    user.lName = lName;
+    user.age = age;
+    return user;
+}
+
+const user1 = createsUser('Shahrukh', 'Arbaz', 43);
+const user2 = createsUser('Saleem', 'Khan', 34);
+
+console.log(user1.fullName());  
+console.log(user2.fullName()); 
