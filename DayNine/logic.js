@@ -87,3 +87,16 @@ const user2 = createsUser('Saleem', 'Khan', 34);
 
 console.log(user1.fullName());  
 console.log(user2.fullName()); 
+
+// prototype
+
+function CreateObjectsss (fName, age){
+    this.fName = fName;
+    this.age = age;
+}
+CreateObjectsss.prototype.nameAndAge = function (){
+    this.fName +' '+this.age
+}
+ u1= new CreateObjectsss('shahrukh', 78);
+ console.log(u1);
+ 
